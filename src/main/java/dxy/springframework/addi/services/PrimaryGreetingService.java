@@ -1,15 +1,13 @@
 package dxy.springframework.addi.services;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Service;
-
 /**
  * @author AD
  * @date 2020/10/07
  */
-@Primary
-@Service
-public class PrimaryBeanService implements GreetingService {
+//since it will be registered in the Configuration Class, Annotations here have to be removed
+//@Primary
+//@Service
+public class PrimaryGreetingService implements GreetingService {
 
     @Override
     public String sayGreeting() {
