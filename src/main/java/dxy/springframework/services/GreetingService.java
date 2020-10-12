@@ -1,4 +1,4 @@
-package dxy.springframework.addi.services;
+package dxy.springframework.services;
 
 public interface GreetingService {
     String sayGreeting();

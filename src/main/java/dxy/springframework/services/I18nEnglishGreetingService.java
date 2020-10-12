@@ -1,4 +1,4 @@
-package dxy.springframework.addi.services;
+package dxy.springframework.services;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -7,11 +7,13 @@ import org.springframework.stereotype.Service;
  * @author AD
  * @date 2020/10/08
  */
-@Profile("ES")
+
+//@Profile({"EN","default"})
+@Profile("EN")
 @Service("i18nService")
-public class I18nSpanishGreetingService implements GreetingService {
+public class I18nEnglishGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hola Mundo - ES";
+        return "Hello World - EN";
     }
 }

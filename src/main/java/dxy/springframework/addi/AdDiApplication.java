@@ -4,11 +4,13 @@ import dxy.springframework.addi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author AD
  */
 @SpringBootApplication
+@ComponentScan(basePackages = "dxy.springframework")
 public class AdDiApplication {
 
     public static void main(String[] args) {
