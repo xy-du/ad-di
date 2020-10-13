@@ -4,3 +4,16 @@ dxy:
     username: dxy_jms
     password: 123_jms
     dburl: datasource.url.jms
+#
+#spring:
+#  profiles:
+#    active: es
+
+#here the --- is the split sign for a file, you can see the content below an another file
+---
+spring:
+  profiles: es
+
+dxy:
+  jms:
+    username: dxy_jms_es
