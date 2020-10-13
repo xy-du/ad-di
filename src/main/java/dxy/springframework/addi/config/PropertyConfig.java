@@ -40,9 +40,7 @@ public class PropertyConfig {
      */
     @Bean
     public FakeDataSource fakeDataSource(){
-        String env_username=env.getProperty("USERNAME");
-        return new FakeDataSource(env_username,password,url);
-//        return new FakeDataSource(userName,password,url);
+        return new FakeDataSource(userName,password,url);
     }
 
     @Bean

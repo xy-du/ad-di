@@ -1,0 +1,6 @@
+# spring will scan this in default, just like the application.properties
+dxy:
+  jms:
+    username: dxy_jms
+    password: 123_jms
+    dburl: datasource.url.jms
