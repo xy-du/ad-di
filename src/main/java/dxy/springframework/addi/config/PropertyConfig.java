@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
@@ -16,12 +14,6 @@ import org.springframework.core.env.Environment;
  * @date 2020/10/13
  */
 @Configuration
-//there are two ways to include multiple property names
-//@PropertySource({"classpath:datasource.properties","classpath:jmsdatasource.properties"})
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jmsdatasource.properties")
-})
 public class PropertyConfig {
     @Autowired
     Environment env;
