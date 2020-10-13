@@ -1,0 +1,35 @@
+# pound sign - followed by comment
+
+name: austin
+
+names: #list
+  - Jack
+  - Tom
+  - Tony
+
+pound_sign: "#" #when you don't want to use it as actual character
+
+book:
+  author: book_author
+  publisher: book_publish
+
+#boolean
+flag: yes
+flag_1: True
+flag_2: TRUE
+
+flag_no: no #No, false, FALSE
+
+string_val: "this is a string value"
+
+colon_string: "here we have colon: the colon!!!"
+
+stay_as_new_line: |
+  fist line
+  second line
+  third line
+
+fold_new_line: >
+  fist line
+  second line
+  third line
