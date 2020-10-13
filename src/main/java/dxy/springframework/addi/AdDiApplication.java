@@ -1,6 +1,7 @@
 package dxy.springframework.addi;
 
 import dxy.springframework.addi.examplebeans.FakeDataSource;
+import dxy.springframework.addi.examplebeans.FakeJMSSource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,6 +17,9 @@ public class AdDiApplication {
 
         FakeDataSource fakeDataSource=ctx.getBean(FakeDataSource.class);
         System.out.println(fakeDataSource.getUserName());
+
+        FakeJMSSource fakeJMSSource=ctx.getBean(FakeJMSSource.class);
+        System.out.println(fakeJMSSource.getUserName());
     }
 
 }
